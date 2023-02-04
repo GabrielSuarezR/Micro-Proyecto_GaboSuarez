@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0 auto;
+    padding: 0;
 }
 body,html{
     background-color: bisque;
@@ -97,3 +98,50 @@ body,html{
 #Skills img{
     width: 100%;
 }
+/* contacto */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    padding: 12px 20px;
+    border: 20px;
+    cursor: pointer;
+    width: 80%;
+    display: flex;
+
+    
+  }
+
+  .contenedorcontacto {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+  }
+  #linkredes{
+    margin-top: 10px;
+  }
+#redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#redes img{
+    height: 20px;
+    margin-top: 10px;
+}
+
+  
+  
+  
+  
