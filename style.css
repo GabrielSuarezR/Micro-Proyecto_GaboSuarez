@@ -81,13 +81,19 @@ body,html{
     height: 190px;
 }
 /* aboutme */
-#infopersonal{
+#infoPersonal{
     display: flex;
+    flex-direction: row;
 }
 #aboutme{
     display: flex;
     justify-content: flex-start;
+    width: 100%;
 }
 #fotopersonal{
     height: 80px;
+}
+/* skills */
+#Skills img{
+    width: 100%;
 }
