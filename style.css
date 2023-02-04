@@ -32,3 +32,26 @@ body,html{
 #links a:hover{
     background-color: orange;
 }
+/* css para el Hero */
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper{
+    width: 100%;
+    height: 500px;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: black;
+}
+.swiper .swiper-pagination-bullet-active{
+    background-color: white;
+}

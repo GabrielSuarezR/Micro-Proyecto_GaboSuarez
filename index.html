@@ -7,19 +7,43 @@
     <title>Curriculum Vitae</title>
     <!-- link con css -->
     <link rel="stylesheet" href="style.css">
+    <!-- link del Hero -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
+    <!-- Seccion del navbar -->
     <header id="navbar">
         <img id="logo" src="imagenes/logo.png" alt="foto de cv">
         <nav id="links">
-            <a href="#">Hero</a>
+            <a href="#hero">Hero</a>
             <a href="#">Experience</a>
             <a href="#">About me</a>
             <a href="#">Skills</a>
             <a href="#">Contact me</a>
         </nav>
     </header>
-<!-- conexion con js -->
-<script scr="main.js"></script>
+    <!-- Seccion del Hero -->
+    <div class="container" id="hero">
+       
+        <div class="swiper">
+            
+            <div class="swiper-wrapper">
+            <!-- Fotos -->
+            <div class="swiper-slide"><img src="imagenes/images.png" ></div>
+            <div class="swiper-slide"><img src="imagenes/logo.png" ></div>
+            <div class="swiper-slide"><img src="imagenes/images.png" ></div>
+          
+            </div>
+            
+            <div class="swiper-pagination"></div>
+        
+            
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
