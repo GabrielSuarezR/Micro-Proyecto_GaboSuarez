@@ -80,6 +80,14 @@ body,html{
 .proyecto img{
     height: 190px;
 }
-.informacion{
- 
+/* aboutme */
+#infopersonal{
+    display: flex;
+}
+#aboutme{
+    display: flex;
+    justify-content: flex-start;
+}
+#fotopersonal{
+    height: 80px;
 }
