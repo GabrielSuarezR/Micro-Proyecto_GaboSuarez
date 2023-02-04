@@ -7,8 +7,6 @@
     <title>Curriculum Vitae</title>
     <!-- link con css -->
     <link rel="stylesheet" href="style.css">
-    <!-- link del Hero -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
     <!-- Seccion del navbar -->
@@ -24,25 +22,19 @@
     </header>
     <!-- Seccion del Hero -->
     <div class="seccion">Hero</div>
-    <div class="container" id="hero">
-       
-        <div class="swiper">
-            
-            <div class="swiper-wrapper">
-            <!-- Fotos -->
-            <div class="swiper-slide"><img src="imagenes/images.png" ></div>
-            <div class="swiper-slide"><img src="imagenes/logo.png" ></div>
-            <div class="swiper-slide"><img src="imagenes/images.png" ></div>
-          
-            </div>
-            
-            <div class="swiper-pagination"></div>
-        
-            
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        
+    <div id="carrusel" class="images-slideshow">
+        <div class="imageSlides fade">
+            <img src="imagenes/igLogo.png">
         </div>
+        <div class="imageSlides fade">
+            <img src="imagenes/images.png">
+        </div>
+        <div class="imageSlides fade">
+            <img src="imagenes/logo.png">
+        </div>
+        <a class="slider-btn previous" onclick="setSlides(-1)">❮</a>
+        <a class="slider-btn next" onclick="setSlides(1)">❯</a>
+</div>
     </div>
     <!-- seccion de Experience -->
     <div class="seccion">Experiencia</div>
@@ -125,7 +117,6 @@
                 </div>
             </div>
           </div> 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

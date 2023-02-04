@@ -1,26 +1,20 @@
 // js del Hero
-function myFunc(){
-    alert("You Clicked me");
- }
+var currentIndex = 1;
+displaySlides(currentIndex);
 
-const swiper = new Swiper('.swiper', {
-    autoplay:{
-        delay:5000,
-        disableOnInteraction:false,
-    },
-    loop: true,
-
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-  });
+function displaySlides(num) {
+    var x;
+    var slides = document.getElementsByClassName("imageSlides");
+    if (num > slides.length) { currentIndex = 1 }
+    if (num < 1) { currentIndex = slides.length }
+    for (x = 0; x < slides.length; x++) {
+        slides[x].style.display = "none";
+    }
+    slides[currentIndex - 1].style.display = "block";
+}
+function setSlides(num) {
+    displaySlides(currentIndex += num);
+}
   
 
   
