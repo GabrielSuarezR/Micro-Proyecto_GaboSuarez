@@ -5,6 +5,15 @@
 body,html{
     background-color: bisque;
 }
+.seccion{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: paleturquoise;
+    font-size: 36px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 /* CSS del navbar */
 #navbar{
     display: flex;
@@ -54,4 +63,23 @@ body,html{
 }
 .swiper .swiper-pagination-bullet-active{
     background-color: white;
+}
+/* css experience */
+#Experience{
+    display: flex;
+    font-size: 12px;
+    flex-direction: column;
+}
+.proyecto{
+    display: flex;
+    height: 200px;
+    justify-content: space-between ;
+    flex-direction: row;
+    gap: 30px;
+}
+.proyecto img{
+    height: 190px;
+}
+.informacion{
+ 
 }
