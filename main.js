@@ -1,3 +1,4 @@
+
 // js del Hero
 var currentIndex = 1;
 displaySlides(currentIndex);
