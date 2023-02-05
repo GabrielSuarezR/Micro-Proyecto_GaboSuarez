@@ -15,8 +15,13 @@ body,html{
     color: white;
     font-family: sans-serif;
     font-weight: bolder;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    border-top: white;
+    border-width: 5px;
+    border-style: solid;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    padding: 30px;
 }
 /* CSS del navbar */
 #navbar{
@@ -140,8 +145,8 @@ body,html{
     margin-bottom: 10px;
 }
 #Experience ul img{
-    height: 20px;
-    width: 30px;
+    height: 16px;
+    width: 24px;
 }
 
 
@@ -166,10 +171,15 @@ body,html{
     justify-content: flex-start;
     width: 100%;
 }
+#aboutme ol img{
+    width: 32px;
+}
+
 #aboutme li{
     margin-left: 30px;
     margin-top: 4px;
     margin-bottom: 4px;
+    list-style-type: square;
 }
 #aboutme ol p{
     font-size: 12px;
@@ -322,6 +332,10 @@ input[type=text], select, textarea {
         height: 290px;
     
     }
+    #Experience ul img{
+        height: 24px;
+        width: 32px;
+    }
     #Experience{
         font-size: 20px;
     }
@@ -337,6 +351,7 @@ input[type=text], select, textarea {
     
       }
 }
+/* Desktop */
 @media only screen and (min-width:768px) and (max-width:1200px){
     #navbar{
         font-size: 10px;
@@ -357,6 +372,10 @@ input[type=text], select, textarea {
       .proyecto{
         height: 320px;
     
+    }
+    #Experience ul img{
+        height: 32px;
+        width: 48px;
     }
     #Experience{
         font-size: 25px;
