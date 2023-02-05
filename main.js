@@ -16,6 +16,25 @@ function displaySlides(num) {
 function setSlides(num) {
     displaySlides(currentIndex += num);
 }
+//Grafico
+const skill1 = document.querySelector('#porcentaje1').innerHTML;
+const skill2 = document.querySelector('#porcentaje2').innerHTML;
+const skill3 = document.querySelector('#porcentaje3').innerHTML;
+const skill4 = document.querySelector('#porcentaje4').innerHTML;
+const barra1 = document.querySelector('#barra1');
+const barra2 = document.querySelector('#barra2');
+const barra3 = document.querySelector('#barra3');
+const barra4 = document.querySelector('#barra4');
+barra1.style.background="blue";
+barra2.style.background="orange";
+barra3.style.background="red";
+barra4.style.background="green";
+const p1 = skill1;
+barra1.style.width=skill1+"%";
+barra2.style.width=skill2+"%";
+barra3.style.width=skill3+"%";
+barra4.style.width=skill4+"%";
+
 
 //validaciones
 

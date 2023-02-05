@@ -158,10 +158,9 @@ body,html{
     flex-direction: row;
     color: white;
     font-size: 9px;
-}
-#infoPersonal div{
     width: 100%;
 }
+
 #aboutme{
     display: flex;
     justify-content: flex-start;
@@ -187,8 +186,27 @@ body,html{
     border-width: 4px;
 }
 /* skills */
-#Skills img{
+#Skills{
+    display: flex;
     width: 100%;
+    flex-direction: column;
+}
+
+#grafico{
+    width: 100%;
+}
+.barra{
+    display: flex;
+    height: 30px;
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+}
+.barra p{
+    margin-left: 0;
+}
+.porcentaje{
+    margin-right: 0;
 }
 /* contacto */
 
