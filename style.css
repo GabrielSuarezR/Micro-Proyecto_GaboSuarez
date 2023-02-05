@@ -165,11 +165,21 @@ body,html{
     font-size: 9px;
     width: 100%;
 }
-
+#Aboutme{
+    border-right-color: white;
+    border-style: solid;
+    border-bottom: none;
+    border-left: none;
+}
 #aboutme{
     display: flex;
     justify-content: flex-start;
     width: 100%;
+    border-right-color: white;
+    border-style: solid;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
 }
 #aboutme ol img{
     width: 32px;
