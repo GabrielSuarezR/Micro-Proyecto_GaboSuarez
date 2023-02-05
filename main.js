@@ -17,25 +17,50 @@ function setSlides(num) {
     displaySlides(currentIndex += num);
 }
 //Grafico
-const skill1 = document.querySelector('#porcentaje1').innerHTML;
-const skill2 = document.querySelector('#porcentaje2').innerHTML;
-const skill3 = document.querySelector('#porcentaje3').innerHTML;
-const skill4 = document.querySelector('#porcentaje4').innerHTML;
-const barra1 = document.querySelector('#barra1');
-const barra2 = document.querySelector('#barra2');
-const barra3 = document.querySelector('#barra3');
-const barra4 = document.querySelector('#barra4');
-barra1.style.background="blue";
-barra2.style.background="orange";
-barra3.style.background="red";
-barra4.style.background="green";
-const p1 = skill1;
-barra1.style.width=skill1+"%";
-barra2.style.width=skill2+"%";
-barra3.style.width=skill3+"%";
-barra4.style.width=skill4+"%";
+var Skills =  {"skill1": [
+    {"nombre": "Python"},
+    {"porcentaje": 50},
+    {"color": "blue"},
+    ],
+    "skill2": [
+        {"nombre": "Java"},
+        {"porcentaje": 80},
+        {"color": "orange"},
+        ],
+    "skill3": [
+        {"nombre": "Html,Css,JavaScript"},
+        {"porcentaje": 60},
+        {"color": "red"},
+        ],
+    "skill4": [
+        {"nombre": "Assembler"},
+        {"porcentaje": 30},
+        {"color": "green"},
+        ],}
 
 
+const grafico = document.querySelector('#grafico');
+
+for (let i = 1; i < Object.keys(Skills).length+1; i++) { 
+const barra = document.createElement("div");
+barra.id = (`"barra${i}"`);
+barra.className = "barra";
+grafico.appendChild(barra);
+barra.style.background = eval(`Skills.skill${i}`)[2].color;
+barra.style.width = eval(`Skills.skill${i}`)[1].porcentaje+"%";
+const contenido = document.createElement('p');
+contenido.innerHTML = eval(`Skills.skill${i}`)[0].nombre;
+barra.appendChild(contenido);
+const porcentaje = document.createElement("p");
+porcentaje.id = (`"porcentaje${i}"`);
+porcentaje.className = "porcentaje";
+porcentaje.innerHTML=eval(`Skills.skill${i}`)[1].porcentaje;
+barra.appendChild(porcentaje);
+const simbolo = document.createElement("p");
+simbolo.innerHTML = "%";
+barra.appendChild(simbolo);
+}
+        
 //validaciones
 
 const usernameEl = document.querySelector('#nombre');
