@@ -132,13 +132,7 @@ body,html{
 #Experience ul img{
     height: 20px;
 }
-.informacion{
 
-    
-}
-.imagen{
-
-}
 
 /* aboutme */
 #combinacion{
@@ -150,14 +144,35 @@ body,html{
 #infoPersonal{
     display: flex;
     flex-direction: row;
+    color: white;
+    font-size: 12px;
+}
+#infoPersonal div{
+    width: 100%;
 }
 #aboutme{
     display: flex;
     justify-content: flex-start;
     width: 100%;
 }
+#aboutme li{
+    margin-left: 30px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+#aboutme ol p{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-decoration: underline;
+    color: orange;
+}
 #fotopersonal{
-    height: 80px;
+    height: 100px;
+    width: 100px;
+    border-color: white;
+    border-style: solid;
+    border-width: 4px;
 }
 /* skills */
 #Skills img{
