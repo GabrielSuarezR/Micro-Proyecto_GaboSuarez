@@ -407,7 +407,7 @@ input[type=text], select, textarea {
       }
 }
 /* desktop */
-@media only screen and (min-width:1200px){
+@media only screen and (min-width:1200px) and (max-width:3600px){
     #navbar{
         font-size: 10px;
     }
