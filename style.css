@@ -51,7 +51,7 @@ body,html{
   #carrusel img {
     margin: auto;
     display: block;
-    height: 300px;
+    height: 400px;
     width: 100%;
 
   }
@@ -59,7 +59,7 @@ body,html{
   .images-slideshow {
     position: relative;
     margin: auto;
-    height: 300px;
+    height: 400px;
 
   }
    
@@ -185,11 +185,11 @@ input[type=text], select, textarea {
     padding: 12px;
     border: 1px solid #ccc;
     margin-top: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
   }
   
   input[type=submit] {
-    background-color: #04AA6D;
+    background-color: orange;
     padding: 12px 20px;
     border: 20px;
     cursor: pointer;
@@ -200,26 +200,74 @@ input[type=text], select, textarea {
   }
 
   .contenedorcontacto {
-    background-color: #f2f2f2;
-    display: flex;
+    background-color: #2E2E58;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 10px;
+    color: white;
+    width: 60%;
 
   }
   #linkredes{
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
   }
 #redes{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+
 }
 #redes img{
     height: 20px;
     margin-top: 10px;
 }
+#descripcion{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+#direccionEmail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#descripcion img{
+    height: 30px;;
+}
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
+
+.form-field input:focus {
+    outline: none;
+}
+
+.form-field.error input {
+    border-color: var(--error-color);
+    margin-bottom: 0;
+}
+.form-field.error textarea {
+    border-color: var(--error-color);
+    margin-bottom: 0;
+}
+
+.form-field.success input {
+    border-color: var(--success-color);
+}
+
+.form-field small {
+    color: var(--error-color);
+    margin-bottom: 20px;
+}
+
+
 
   
   

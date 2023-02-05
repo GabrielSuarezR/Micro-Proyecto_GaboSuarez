@@ -138,16 +138,31 @@
         <div id="contacto" class="seccion">Contacto</div>
         <div class="contenedorcontacto">
             <div id="descripcion">
-              <p>Cualquier duda o interes dejame un mensaje</p>
+                <div id="direccionEmail">
+                    <img src="imagenes/google_mail_gmail_logo_icon_159346.png" alt=""><p>Gabriel.suarez@correo.unimet.edu.ve</p>
+                </div>
+                
+                <p>Cualquier duda o interes dejame un mensaje</p>
             </div>
-              <div>
-                <form>
-                  <label for="nombre">Nombre completo</label>
-                  <input type="text" id="nombre" name="nombrecompleto" placeholder="Tu nombre completo">
-                  <label for="correo">Correo</label>
-                  <input type="text" id="correo" name="correoelectronico" placeholder="Direccion de correo electronico">
-                  <label for="mensaje">Dejame un mensaje</label>
+           
+              <div id="inputs">
+                <form id="signup" class="form">
+                  <div class="form-field">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombrecompleto" placeholder="Tu nombre completo">
+                    <small></small>
+                  </div>
+                  
+                  <div class="form-field">
+                    <label for="correo">Correo</label>
+                    <input type="text" id="correo" name="correoelectronico" placeholder="Direccion de correo electronico">
+                    <small></small>
+                  </div>
+                  <div class="form-field">
+                    <label for="mensaje">Dejame un mensaje</label>
                   <textarea id="mensaje" name="mensaje" placeholder="..." style></textarea>
+                  <small></small>
+                  </div>
                   <input id="enviar" type="submit" value="Enviar">
                 </form>
             </div>
