@@ -25,10 +25,12 @@ body,html{
     padding-bottom: 2px;
     align-items: center;
     font-size: 8px;
+    width: 100%;
 }
 #logo{
     width: 30px;
     align-self: flex-start;
+    margin-left: 20px;
 }
 #links a{
     color: White;
@@ -37,12 +39,19 @@ body,html{
     border-radius: 5px;
     padding: 8px;
     font-weight: bold;
-    font-family:sans-serif
+    font-family:sans-serif;
 
+}
+#links{
+    margin-right: 20px;
 }
 #links a:hover{
     color: orange;
 }
+
+
+
+
 /* css para el Hero */
 .imageSlides {
     display: none
@@ -51,7 +60,7 @@ body,html{
   #carrusel img {
     margin: auto;
     display: block;
-    height: 400px;
+    height: 300px;
     width: 100%;
 
   }
@@ -59,7 +68,7 @@ body,html{
   .images-slideshow {
     position: relative;
     margin: auto;
-    height: 400px;
+    height: 300px;
 
   }
    
@@ -116,7 +125,8 @@ body,html{
 
 }
 .proyecto img{
-    height: 230px;
+    height: 100%;
+    width: 100%;
 }
 #Experience h2{
     color: orange;
@@ -131,7 +141,9 @@ body,html{
 }
 #Experience ul img{
     height: 20px;
+    width: 30px;
 }
+
 
 
 /* aboutme */
@@ -145,7 +157,7 @@ body,html{
     display: flex;
     flex-direction: row;
     color: white;
-    font-size: 12px;
+    font-size: 9px;
 }
 #infoPersonal div{
     width: 100%;
@@ -161,7 +173,7 @@ body,html{
     margin-bottom: 4px;
 }
 #aboutme ol p{
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bold;
     margin-top: 20px;
     text-decoration: underline;
@@ -205,6 +217,7 @@ input[type=text], select, textarea {
     padding: 10px;
     color: white;
     width: 60%;
+    font-size: 12px;
 
   }
   #linkredes{
@@ -227,6 +240,7 @@ input[type=text], select, textarea {
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 
 }
 #direccionEmail{
@@ -267,7 +281,80 @@ input[type=text], select, textarea {
     margin-bottom: 20px;
 }
 
+/* Responsive */
+/* Mobile */
+@media only screen and (min-width:576px) and (max-width:768px){
+    #navbar{
+        font-size: 10px;
+    }
+    #logo{
+        width: 40px;
 
+    }
+    #carrusel img {
+        height: 400px;
+    
+      }
+       
+      .images-slideshow {
+        height: 400px;
+    
+      }
+      .proyecto{
+        height: 290px;
+    
+    }
+    #Experience{
+        font-size: 20px;
+    }
+    #infoPersonal{
+        font-size: 12px;
+    }
+    #aboutme ol p{
+        font-size: 16px;
+       
+    }
+    .contenedorcontacto {
+        font-size: 16px;
+    
+      }
+}
+@media only screen and (min-width:768px) and (max-width:1200px){
+    #navbar{
+        font-size: 10px;
+    }
+    #logo{
+        width: 40px;
+
+    }
+    #carrusel img {
+        height: 500px;
+    
+      }
+       
+      .images-slideshow {
+        height: 500px;
+    
+      }
+      .proyecto{
+        height: 320px;
+    
+    }
+    #Experience{
+        font-size: 25px;
+    }
+    #infoPersonal{
+        font-size: 18px;
+    }
+    #aboutme ol p{
+        font-size: 20px;
+       
+    }
+    .contenedorcontacto {
+        font-size: 20px;
+    
+      }
+}
 
   
   
