@@ -36,7 +36,32 @@ var Skills =  {"skill1": [
         {"nombre": "Assembler"},
         {"porcentaje": 30},
         {"color": "green"},
-        ],}
+        ],
+    "skill5": [
+        {"nombre": "Excel"},
+        {"porcentaje": 50},
+        {"color": "blue"},
+        ],
+    "skill6": [
+        {"nombre": "Manejo de Bases de Datos"},
+        {"porcentaje": 70},
+        {"color": "orange"},
+        ],
+        "skill7": [
+            {"nombre": "Diseño web"},
+            {"porcentaje": 60},
+            {"color": "red"},
+            ],
+            "skill8": [
+                {"nombre": "Manejo de Redes sociales"},
+                {"porcentaje": 90},
+                {"color": "green"},
+                ],
+                "skill9": [
+                    {"nombre": "Diseño Grafico"},
+                    {"porcentaje": 40},
+                    {"color": "blue"},
+                    ]}
 
 
 const grafico = document.querySelector('#grafico');

@@ -210,10 +210,13 @@ body,html{
     display: flex;
     width: 100%;
     flex-direction: column;
+    height: 100%;
 }
+
 
 #grafico{
     width: 100%;
+    height: 100%;
 }
 .barra{
     display: flex;
@@ -228,6 +231,7 @@ body,html{
 .porcentaje{
     margin-right: 0;
 }
+
 /* contacto */
 
 input[type=text], select, textarea {
